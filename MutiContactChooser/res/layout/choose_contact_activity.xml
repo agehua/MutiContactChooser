@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+
+    <com.jincheng.notice.contact.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_bar_edit_selector"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入关键字"
+        android:singleLine="true"
+        android:textSize="15.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rela_wait"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在加载中，请稍后..."
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+
+            <ListView
+                android:id="@+id/country_lvcountry"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:listSelector="#00000000" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/show_head_toast_bg"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:visibility="gone" />
+
+            <com.jincheng.notice.contact.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
