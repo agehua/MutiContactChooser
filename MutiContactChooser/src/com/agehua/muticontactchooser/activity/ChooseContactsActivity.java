@@ -6,9 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 
 
-
-
-
 import com.agehua.muticontactchooser.ASyncUtils;
 import com.agehua.muticontactchooser.CharacterParser;
 import com.agehua.muticontactchooser.ClearEditText;
