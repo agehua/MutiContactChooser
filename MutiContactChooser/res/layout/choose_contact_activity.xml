@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
 
-    <com.jincheng.notice.contact.ClearEditText
+    <com.agehua.muticontactchooser.ClearEditText
         android:id="@+id/filter_edit"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                 android:textSize="30.0dip"
                 android:visibility="gone" />
 
-            <com.jincheng.notice.contact.SideBar
+            <com.agehua.muticontactchooser.SideBar
                 android:id="@+id/sidrbar"
                 android:layout_width="30.0dip"
                 android:layout_height="fill_parent"
